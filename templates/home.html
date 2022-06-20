@@ -1,0 +1,34 @@
+{%extends 'base.html'%}
+
+
+
+    {%block title %}{%endblock%}
+
+    
+
+
+{%block main%}
+    <section class='form_flex'>
+        <div class="form_title"><h1>{{'school learning'.title()}}</h1></div>
+        <div class='form_design'>
+            
+            <div class='form_send'>
+                
+                <form method ='post' action = '/home'>
+                    <input type = 'email' placeholder = "Enter your email please " required name='email'>
+                    <input type = 'password' name='password' placeholder = "Enter your password please " required>
+                    <input type = 'submit' value='connexion'  required>
+
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+    <section class='boll'></section>
+
+{% endblock %}
+
+      

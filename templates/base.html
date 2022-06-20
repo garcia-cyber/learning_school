@@ -1,0 +1,21 @@
+<!DOCTYPE>
+<html>
+   
+    <head>
+        <title>{%block title %} {{'login'.upper()}} {%endblock%}</title>
+        <link rel="stylesheet" href="{{url_for('static',filename='css/syle.css')}}">
+       
+    </head>
+   
+
+    <body>
+        {%block main%} {% endblock %}
+
+        
+        <script src='{{url_for('static',filename='js/app.js')}}'>
+
+        </script>
+
+        
+    </body>
+</html>
