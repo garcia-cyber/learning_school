@@ -2,14 +2,16 @@
 
 
 
-    {%block title %}{%endblock%}
-
-    
-
+    {%block title %}{{'user login'.title()}}{%endblock%}
 
 {%block main%}
     <section class='form_flex'>
-        <div class="form_title"><h1>{{'school learning'.title()}}</h1></div>
+        
+        <div class="page-section" id='forma'>
+        <div class="form_title">
+            <h1>{{'school learning'.title()}}</h1>
+           
+        </div>
         <div class='form_design'>
             
             <div class='form_send'>
@@ -18,8 +20,6 @@
                     <input type = 'email' placeholder = "Enter your email please " required name='email'>
                     <input type = 'password' name='password' placeholder = "Enter your password please " required>
                     <input type = 'submit' value='connexion'  required>
-
-
                 </form>
 
             </div>

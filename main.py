@@ -3,6 +3,8 @@ import mysql.connector as mysql
 import bcrypt as code
 
 school = Flask(__name__)
+school.secret_key = 'mukoko mbala gracia'
+
 
 @school.route('/home',methods=['GET','POST'])
 def home():
