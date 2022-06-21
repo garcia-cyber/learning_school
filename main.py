@@ -15,6 +15,17 @@ school.secret_key = 'mukoko mbala gracia'
 sql = mysql.connect(host='localhost',user = 'linux',password = 'data',database = 'school')
 
 
+"""
+*********************************************************************
+
+    page d'accueil du plate-forme 
+    
+*********************************************************************
+""" 
+
+@school.route('/index')
+def index():
+    return render_template('school.html')
 
 
 @school.route('/home',methods=['GET','POST'])
@@ -45,6 +56,13 @@ def home():
         
         
     return render_template('home.html')
+
+"""
+*********************************************************************
+    partie parents_form
+    
+*********************************************************************
+""" 
 
 """
 *********************************************************************

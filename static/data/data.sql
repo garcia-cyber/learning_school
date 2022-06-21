@@ -25,7 +25,7 @@ create table communes(
 
 -- insertion de quelques communes 
 
-insert into communes(lib_commune)values("Matete"),("Limete"),("Lemba"),("N'djili")("Masina");
+insert into communes(lib_commune)values("Matete"),("Limete"),("Lemba"),("N'djili"),("Masina");
 
 -- create table parents  avec commune comme cle etranger
 
