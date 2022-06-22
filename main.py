@@ -5,6 +5,7 @@ import bcrypt as code
 school = Flask(__name__)
 school.secret_key = 'mukoko mbala gracia'
 
+
 """
 *********************************************************************
     partie de la connection avec mon data
@@ -12,10 +13,12 @@ school.secret_key = 'mukoko mbala gracia'
 *********************************************************************
 """ 
 
+
 sql = mysql.connect(host='localhost',user = 'linux',password = 'data',database = 'school')
 
 
 """
+
 *********************************************************************
 
     page d'accueil du plate-forme 
@@ -23,10 +26,33 @@ sql = mysql.connect(host='localhost',user = 'linux',password = 'data',database =
 *********************************************************************
 """ 
 
+
+@school.route('/')
 @school.route('/index')
 def index():
     return render_template('school.html')
 
+
+
+@school.route('/about')
+def about():
+    return render_template('about.html')
+
+@school.route('/events')
+def events():
+    return render_template('events.html')
+
+
+
+
+"""
+
+*********************************************************************
+
+    page login admin
+    
+*********************************************************************
+""" 
 
 @school.route('/home',methods=['GET','POST'])
 def home():
@@ -71,7 +97,7 @@ def home():
 *********************************************************************
 """ 
 
-@school.route('/')
+
 @school.route('/admin')
 def admin():
     
