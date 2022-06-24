@@ -68,11 +68,12 @@ def home():
         
         query = cur.fetchone()
         b = query[1]
-        cur.close()
+        cur.close() 
         
         
         
         if len(query) > 0:
+            
             session['nameAdm'] = query[1]
             session['adminUserLogin'] = True
             
